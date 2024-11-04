@@ -81,7 +81,7 @@
         <symbol xmlns="http://www.w3.org/2000/svg" id="pet" viewBox="0 0 14 14"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M1.5 9.5c.552 0 1-.672 1-1.5s-.448-1.5-1-1.5s-1 .672-1 1.5s.448 1.5 1 1.5m3-4.5c.552 0 1-.672 1-1.5S5.052 2 4.5 2s-1 .672-1 1.5s.448 1.5 1 1.5m5 0c.552 0 1-.672 1-1.5S10.052 2 9.5 2s-1 .672-1 1.5s.448 1.5 1 1.5m3 4.5c.552 0 1-.672 1-1.5s-.448-1.5-1-1.5s-1 .672-1 1.5s.448 1.5 1 1.5M10 10c0 1.38-1.62 2-3 2s-3-.62-3-2s1-3.5 3-3.5s3 2.12 3 3.5"/></symbol>
       </defs>
     </svg>
-
+<!--
     <div class="preloader-wrapper">
       <div class="preloader">
       </div>
@@ -272,8 +272,8 @@
               aria-controls="offcanvasNavbar">
               <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#menu"></use></svg>
             </button>
-          </div>
-          
+          </div>-->
+          <!--
           <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
             <div class="search-bar row bg-light p-2 rounded-4">
               <div class="col-md-4 d-none d-md-block">
@@ -341,14 +341,22 @@
           </div>
 
         </div>
-      </div>
+      </div>-->
     </header>
     
+  </header>
+    
     <section style="background-image: url('images/banner-1.png');background-repeat: no-repeat;background-size: cover;">
+      <div class="logo-overlay">
+        <img src="images/logo.png" alt="Company Logo" class="banner-logo">
+      </div>
+
+      
       <div class="container-lg">
         <div class="row">
           <div class="col-lg-6 pt-5 mt-5">
-            <h2 class="display-1 ls-1"><span class="fw-bold text-primary">Organic</span> Mushrooms at your <span class="fw-bold">Doorsteps</span></h2>
+            <br><br><br>
+            <h2 class="display-1 ls-1"> <span class="fw-bold text-primary">Organic</span> Mushrooms at your <span class="fw-bold">Doorsteps</span></h2>
             <p class="fs-4">Premium Quality Mushrooms.</p>
             <div class="d-flex gap-3">
               <a href="#" class="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Start Shopping</a>
@@ -376,7 +384,32 @@
             </div>
           </div>
         </div>
-        
+        <style>
+          .logo-overlay {
+              position: absolute;
+              top: 20px;
+              left: 20px;
+              background: transparent; /* Ensures no background color */
+          }
+          
+          .banner-logo {
+              max-width: 200px; /* Adjust based on your logo size */
+              height: auto;
+              display: block;
+          }
+          
+          /* Responsive adjustments */
+          @media (max-width: 768px) {
+              .logo-overlay {
+                  top: 10px;
+                  left: 10px;
+              }
+              
+              .banner-logo {
+                  max-width: 150px; /* Smaller logo on mobile */
+              }
+          }
+          </style>
         <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-0 justify-content-center">
           <div class="col">
             <div class="card border-0 bg-primary rounded-0 p-4 text-light">
@@ -453,7 +486,7 @@
             <div class="category-carousel swiper">
               <div class="swiper-wrapper">
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="images/category-thumb-1.png" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Oyster Mushrooms</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
